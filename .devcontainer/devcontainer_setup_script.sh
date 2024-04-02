@@ -6,7 +6,10 @@
 # Get current username
 USERNAME=$(whoami)
 # Specify the JSON file path
-FILEPATH="devcontainer.json"
+FILEPATH=".devcontainer/devcontainer.json"
+if [ ! -f "$FILEPATH" ]; then
+    FILEPATH="devcontainer.json"
+fi
 
 # Replace REPLACE_ME with the current username using the sed utility
 sed -i -e "s/REPLACE_ME/$USERNAME/g" $FILEPATH
