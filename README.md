@@ -63,14 +63,20 @@ This assumes you have the [prerequisites](#prerequisites) installed.
     - Manual
       - Replace "REPLACE_ME" with your username (that you are logged in with on your host) in the .devcontainer/devcontainer.json file. This needs to be the same for both occurrences of "REPLACE_ME".
 
-5) Open the project in a devcontainer
+5) Stop git from telling you about your local changes in the `devcontainer.json` file
+
+  ```bash
+  git update-index --assume-unchanged .devcontainer/devcontainer.json
+  ```
+
+6) Open the project in a devcontainer
 
     - Click the green button in the bottom left corner of the window
     - Select "Reopen in Container"
     - Wait for the devcontainer to build
     - Open a terminal in the devcontainer (by clicking the "+" in the VS Code terminal tab). This will be inside the devcontainer!
 
-6) Build the workspace
+7) Build the workspace
 
     Now you are inside the devcontainer and can build the workspace.
 
