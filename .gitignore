@@ -16,3 +16,5 @@ log
 # PyCharm project files
 .idea 
 
+# ignore changes in this file, since everyone needs to adjust their local copy
+.devcontainer/devcontainer.json
