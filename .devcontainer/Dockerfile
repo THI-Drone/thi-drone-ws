@@ -18,7 +18,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 RUN apt-get update && apt-get upgrade -y
 
 # Install python3
-RUN apt-get install -y python3-pip
+RUN apt-get install -y python3.11
 # Install useful tooling
 RUN apt-get install -y ssh vim
 

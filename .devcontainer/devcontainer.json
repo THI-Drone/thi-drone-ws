@@ -35,5 +35,5 @@
         "--net=host",
         "-e", "DISPLAY=${env:DISPLAY}"
     ],
-    "postCreateCommand": "sudo rosdep fix-permissions && rosdep update && rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/"
+    "postCreateCommand": "sudo rosdep fix-permissions && rosdep update && rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/ && sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1"
 }
