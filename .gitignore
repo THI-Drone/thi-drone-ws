@@ -1,0 +1,17 @@
+# This gitignore file is for ROS2 projects. It ignores the following files and directories:
+
+# colcon/CMake output
+build
+install
+log
+
+# Python bytecode cache
+*.pyc 
+# IntelliJ IDEA project files
+*.iml 
+# vim swap files
+*.swp
+# OS X Finder metadata file
+.DS_Store 
+# PyCharm project files
+.idea 
