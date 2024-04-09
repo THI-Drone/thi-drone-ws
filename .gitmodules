@@ -1,0 +1,6 @@
+[submodule "src/interfaces"]
+	path = src/interfaces
+	url = git@github.com:THI-Drone/interfaces.git
+[submodule "src/mission_control_package"]
+	path = src/mission_control_package
+	url = git@github.com:THI-Drone/mission_control_package.git
