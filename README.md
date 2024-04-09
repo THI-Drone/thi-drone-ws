@@ -58,8 +58,8 @@ This assumes you have the [prerequisites](#prerequisites) installed.
 
     - Via bash script
       - cd into the .devcontainer directory
-      - Make the bash script executable by running `chmod +x .devcontainer/replace-username.sh`
-      - Run the bash script by running `./.devcontainer/replace-username.sh`
+      - Make the bash script executable by running `chmod +x .devcontainer/devcontainer_setup_script.sh`
+      - Run the bash script by running `./.devcontainer/devcontainer_setup_script.sh`
     - Manual
       - Replace "REPLACE_ME" with your username (that you are logged in with on your host) in the .devcontainer/devcontainer.json file. This needs to be the same for both occurrences of "REPLACE_ME".
 
