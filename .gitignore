@@ -15,3 +15,5 @@ log
 .DS_Store 
 # PyCharm project files
 .idea 
+# VSCode files
+.vscode
