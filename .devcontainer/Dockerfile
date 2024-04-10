@@ -27,6 +27,9 @@ RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> $BASHRCPATH
 # Set the default shell to bash (rather than sh)
 ENV SHELL /bin/bash
 
+# Fix Python deprecated warnings when using ROS2
+RUN pip install setuptools==58.2.0
+
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
