@@ -14,7 +14,8 @@ thi-drone-ws
 ├─── .devcontainer                      # Contains the devcontainer configuration
 ├─── .gitignore                         # Contains the gitignore configuration
 ├─── LICENSE                            # Contains the license information
-└─── README.md                          # The file you are reading right now
+├─── README.md                          # The file you are reading right now
+└─── src                                # Source directory containing all the ROS packages
 ```
 
 ## Setup
@@ -81,10 +82,14 @@ This assumes you have the [prerequisites](#prerequisites) installed.
     Now you are inside the devcontainer and can build the workspace.
 
     ``` bash
-    colcon build
+    chmod +x build.sh
+    ./build.sh
     ```
 
 ## Contribution guidelines
+
+### Adding a ROS package
+See [Git Repo Developer Guide](https://docs.google.com/document/d/17nq2SS2DX0lrlWp5FjLQez1mpn0i5w_5APbjAiUk3j0/edit?usp=drive_link) for more information.
 
 ### Branching
 
@@ -99,8 +104,6 @@ We use the following branch hierarchy for development in this project:
 
 The different branches explained:
 
-- main
-  - Contains nothing, we leave it alone to avoid confusions as to what it is
 - release
   - Contains the commits that are ready to be released
 - pre-release
