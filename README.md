@@ -88,8 +88,8 @@ This assumes you have the [prerequisites](#prerequisites) installed.
 
 ## Contribution guidelines
 
-### Adding a ROS package
-See [Git Repo Developer Guide](https://docs.google.com/document/d/17nq2SS2DX0lrlWp5FjLQez1mpn0i5w_5APbjAiUk3j0/edit?usp=drive_link) for more information.
+### Working with the Workspace
+See [ROS Workspace Developer Guide](https://docs.google.com/document/d/17nq2SS2DX0lrlWp5FjLQez1mpn0i5w_5APbjAiUk3j0/edit?usp=drive_link) for more information.
 
 ### Branching
 
