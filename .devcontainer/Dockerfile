@@ -22,6 +22,9 @@ RUN apt-get install -y python3-pip
 # Install useful tooling
 RUN apt-get install -y ssh vim
 
+# C++ JSON lib
+RUN apt-get install -y nlohmann-json3-dev
+
 # Make sure ROS is sourced in every bash shell in the container
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> $BASHRCPATH
 # Set the default shell to bash (rather than sh)
