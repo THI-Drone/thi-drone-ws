@@ -22,3 +22,7 @@
 	path = src/common_package_py
 	url = https://github.com/THI-Drone/common_package_py.git
 	branch = dev
+[submodule "src/qrcode_detection_package"]
+	path = src/qrcode_detection_package
+	url = https://github.com/THI-Drone/qrcode_detection_package.git
+	branch = dev
