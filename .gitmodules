@@ -26,3 +26,7 @@
 	path = src/qrcode_detection_package
 	url = https://github.com/THI-Drone/qrcode_detection_package.git
 	branch = dev
+[submodule "src/telemetry_package"]
+	path = src/telemetry_package
+	url = https://github.com/THI-Drone/telemetry_package.git
+	branch = dev
