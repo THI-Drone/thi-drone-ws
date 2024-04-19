@@ -30,3 +30,7 @@
 	path = src/telemetry_package
 	url = https://github.com/THI-Drone/telemetry_package.git
 	branch = dev
+[submodule "src/waypoint_package"]
+	path = src/waypoint_package
+	url = https://github.com/THI-Drone/waypoint_package.git
+	branch = dev
