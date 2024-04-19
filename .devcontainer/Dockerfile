@@ -25,6 +25,12 @@ RUN apt-get install -y ssh vim
 # C++ JSON lib
 RUN apt-get install -y nlohmann-json3-dev
 
+# Python OpenCV Lib
+RUN pip install opencv-python
+
+# LibGL Dependency
+RUN apt-get install -y libgl1-mesa-glx
+
 # Make sure ROS is sourced in every bash shell in the container
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> $BASHRCPATH
 # Set the default shell to bash (rather than sh)
