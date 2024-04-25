@@ -1,4 +1,4 @@
-name: Colcon Build, Test, Coverage and Autoformat Superrepo
+name: Colcon Build, Test, Coverage and Autoformat in Superrepo
 
 on:
   pull_request:
