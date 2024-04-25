@@ -1,0 +1,16 @@
+name: Colcon Build, Test, Coverage and Autoformat Superrepo
+
+on:
+  pull_request:
+    branches:
+      - dev
+      - pre-release
+      - release
+
+  workflow_dispatch:
+
+
+jobs:
+  Autoformat-and-Test:
+    uses: "THI-Drone/workflow/.github/workflows/super_workflow.yml@main"
+
