@@ -8,8 +8,7 @@ on:
       - release
 
   workflow_dispatch:
-    
-    
+
 jobs:
   Autoformat-and-Test:
     uses: "THI-Drone/workflow/.github/workflows/super_workflow.yml@main"
