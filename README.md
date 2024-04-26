@@ -66,9 +66,9 @@ This assumes you have the [prerequisites](#prerequisites) installed.
 
 5) Stop git from telling you about your local changes in the `devcontainer.json` file
 
-  ```bash
-  git update-index --assume-unchanged .devcontainer/devcontainer.json
-  ```
+    ```bash
+    git update-index --assume-unchanged .devcontainer/devcontainer.json
+    ```
 
 6) Open the project in a devcontainer
 
@@ -89,6 +89,7 @@ This assumes you have the [prerequisites](#prerequisites) installed.
 ## Contribution guidelines
 
 ### Working with the Workspace
+
 See [ROS Workspace Developer Guide](https://docs.google.com/document/d/17nq2SS2DX0lrlWp5FjLQez1mpn0i5w_5APbjAiUk3j0/edit?usp=drive_link) for more information.
 
 ### Branching
@@ -112,6 +113,43 @@ The different branches explained:
   - Contains finished features that are ready to be integration tested
 - feature-branch
   - Contains the development of a singular feature
+
+### Coding Style/Convention
+
+#### Autoformatting
+
+We use the following code style guidelines for formatting the source code of this project:
+C++ code should follow the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
+Python code should follow the [PEP 8 Style Guide](https://pep8.org/).
+
+In order to ensure that the code style guidelines are followed, we use the following tools:
+
+- clang-format for C++ code
+- autopep8 for Python code
+
+##### Visual Studio Code autoformatting
+
+You can configure your Visual Studio Code to ensure that the code is automatically formatted on file save, in order to do this please see the documentation of the respective extensions:
+
+- [clang-format](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)
+- [autopep8](https://marketplace.visualstudio.com/items?itemName=ms-python.autopep8)
+
+##### Manually formatting
+
+Alternatively these tools can be run manually by executing the following commands in your packages root directory:
+
+  ``` bash
+  # Format Python code manually
+  autopep8 --global-config=pep8 --max-line-length 80 --aggressive --aggressive --in-place --recursive .
+  ```
+  
+  ``` bash
+  # Format C++ code manually
+  for file in $(find . -name "*.cpp" -o -name "*.cc" -o -name "*.cxx" -o -name "*.hpp" -o -name "*.hh" -o -name "*.h" -o -name "*.hxx" -o -name "*.c++"); do
+    echo "Formatting: $file"
+    clang-format -i $file
+  done
+  ```
 
 ## Contact
 

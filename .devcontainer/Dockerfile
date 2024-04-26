@@ -31,6 +31,10 @@ RUN pip install opencv-python
 # LibGL Dependency
 RUN apt-get install -y libgl1-mesa-glx
 
+# Autoformatter for C++ / Python
+RUN apt-get install -y clang-format
+RUN apt-get install -y python3-autopep8
+
 # Make sure ROS is sourced in every bash shell in the container
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> $BASHRCPATH
 # Set the default shell to bash (rather than sh)
