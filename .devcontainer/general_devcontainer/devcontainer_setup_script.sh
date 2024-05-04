@@ -6,7 +6,7 @@
 # Get current username
 USERNAME=$(whoami)
 # Specify the JSON file path
-FILEPATH=".devcontainer/devcontainer.json"
+FILEPATH=".devcontainer/general_devcontainer/devcontainer.json"
 if [ ! -f "$FILEPATH" ]; then
     FILEPATH="devcontainer.json"
 fi
