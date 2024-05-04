@@ -34,6 +34,10 @@ RUN apt-get install -y libgl1-mesa-glx
 RUN apt-get install -y clang-format
 RUN apt-get install -y python3-autopep8
 
+# MAVLINK lib
+COPY install-mavsdk.sh /tmp/
+RUN chmod +x /tmp/install-mavsdk.sh && /tmp/install-mavsdk.sh && rm /tmp/install-mavsdk.sh
+
 # Make sure ROS is sourced in every bash shell in the container
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> $BASHRCPATH
 # Set the default shell to bash (rather than sh)
@@ -45,6 +49,9 @@ RUN pip install setuptools==58.2.0
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
+
+# Create workspace directory
+RUN mkdir -p /home/ws
 
 # Set the default user. (Can be omitted if you want to keep the default as root)
 USER $USERNAME
