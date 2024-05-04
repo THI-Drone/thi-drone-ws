@@ -26,6 +26,8 @@ RUN apt-get install -y nlohmann-json3-dev
 
 # Python OpenCV Lib
 RUN pip install opencv-python
+# this gets installed by rosdep, anyways so let's put it here
+RUN apt-get install -y python3-opencv
 
 # LibGL Dependency
 RUN apt-get install -y libgl1-mesa-glx
