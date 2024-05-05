@@ -34,3 +34,7 @@
 	path = src/waypoint_package
 	url = https://github.com/THI-Drone/waypoint_package.git
 	branch = dev
+[submodule "src/mission_file_reader"]
+	path = src/mission_file_reader
+	url = https://github.com/THI-Drone/mission_file_reader.git
+	branch = dev
