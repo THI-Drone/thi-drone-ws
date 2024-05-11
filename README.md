@@ -1,5 +1,5 @@
 # thi-drone-ws
-
+ABC
 ## About this project
 
 This project is about building software for the the companian computer of a drone on autopilot. The software is written using ROS and is intended to run on a Raspberry Pi 4/5. The software is intended to be used with a Pixhawk6C flight controller. The development is done in C++ and Python. The project is taking place in the context of a 6th semester student project of the [Aircraft and Vehicle Informatics (B. Sc.)](https://www.thi.de/en/computer-science/degree-programmes/aircraft-and-vehicle-informatics-bsc/) degree program at the [Technische Hochschule Ingolstadt](hhttps://www.thi.de/en/).
