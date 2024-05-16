@@ -17,7 +17,7 @@
 [submodule "src/interfaces"]
 	path = src/interfaces
 	url = https://github.com/THI-Drone/interfaces.git
-	branch = dev
+	branch = feat-fcc-bridge-defs 
 [submodule "src/common_package_py"]
 	path = src/common_package_py
 	url = https://github.com/THI-Drone/common_package_py.git
@@ -38,3 +38,7 @@
 	path = src/mission_file_reader
 	url = https://github.com/THI-Drone/mission_file_reader.git
 	branch = dev
+[submodule "src/fcc_bridge_package"]
+	path = src/fcc_bridge_package
+	url = https://github.com/THI-Drone/fcc_bridge_package.git
+    branch = feat-inital-work 
