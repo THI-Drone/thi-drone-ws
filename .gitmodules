@@ -41,4 +41,4 @@
 [submodule "src/fcc_bridge_package"]
 	path = src/fcc_bridge_package
 	url = https://github.com/THI-Drone/fcc_bridge_package.git
-    branch = feat-inital-work 
+    branch = dev
