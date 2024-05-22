@@ -1,0 +1,9 @@
+fcc_bridge:
+  ros__parameters:
+    UAV_ID: "SIMULATOR"
+qr_code_scanner_node:
+  ros__parameters:
+    sim: true
+mission_control:
+  ros__parameters:
+    MDF_FILE_PATH: "DEFAULT"
