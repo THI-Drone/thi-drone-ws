@@ -17,7 +17,7 @@
 [submodule "src/qrcode_detection_package"]
 	path = src/qrcode_detection_package
 	url = https://github.com/THI-Drone/qrcode_detection_package.git
-	branch = dev
+	branch = feat-unit-tests
 [submodule "src/telemetry_package"]
 	path = src/telemetry_package
 	url = https://github.com/THI-Drone/telemetry_package.git
