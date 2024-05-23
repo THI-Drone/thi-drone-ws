@@ -34,3 +34,7 @@
 	path = src/fcc_bridge_package
 	url = https://github.com/THI-Drone/fcc_bridge_package.git
     branch = dev
+[submodule "src/mission_software_launch"]
+	path = src/mission_software_launch
+	url = https://github.com/THI-Drone/mission_software_launch.git
+	branch = dev
