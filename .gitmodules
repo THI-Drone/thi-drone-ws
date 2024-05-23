@@ -2,14 +2,6 @@
 	path = src/common_package
 	url = https://github.com/THI-Drone/common_package.git
 	branch = dev
-[submodule "src/demo_package_py"]
-	path = src/demo_package_py
-	url = https://github.com/THI-Drone/demo_package_py.git
-	branch = dev
-[submodule "src/demo_package"]
-	path = src/demo_package
-	url = https://github.com/THI-Drone/demo_package.git
-	branch = dev
 [submodule "src/mission_control_package"]
 	path = src/mission_control_package
 	url = https://github.com/THI-Drone/mission_control_package.git
