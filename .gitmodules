@@ -38,3 +38,7 @@
 	path = src/mission_software_launch
 	url = https://github.com/THI-Drone/mission_software_launch.git
 	branch = dev
+[submodule "deployment"]
+	path = deployment
+	url = https://github.com/THI-Drone/deployment.git
+	branch = dev
