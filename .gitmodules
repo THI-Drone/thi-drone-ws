@@ -1,31 +1,23 @@
 [submodule "src/common_package"]
 	path = src/common_package
 	url = https://github.com/THI-Drone/common_package.git
-	branch = dev
-[submodule "src/demo_package_py"]
-	path = src/demo_package_py
-	url = https://github.com/THI-Drone/demo_package_py.git
-	branch = dev
-[submodule "src/demo_package"]
-	path = src/demo_package
-	url = https://github.com/THI-Drone/demo_package.git
-	branch = dev
+	branch = pre-release
 [submodule "src/mission_control_package"]
 	path = src/mission_control_package
 	url = https://github.com/THI-Drone/mission_control_package.git
-	branch = dev
+	branch = pre-release
 [submodule "src/interfaces"]
 	path = src/interfaces
 	url = https://github.com/THI-Drone/interfaces.git
-	branch = dev
+	branch = pre-release
 [submodule "src/common_package_py"]
 	path = src/common_package_py
 	url = https://github.com/THI-Drone/common_package_py.git
-	branch = dev
+	branch = pre-release
 [submodule "src/qrcode_detection_package"]
 	path = src/qrcode_detection_package
 	url = https://github.com/THI-Drone/qrcode_detection_package.git
-	branch = dev
+	branch = pre-release
 [submodule "src/telemetry_package"]
 	path = src/telemetry_package
 	url = https://github.com/THI-Drone/telemetry_package.git
@@ -33,4 +25,20 @@
 [submodule "src/waypoint_package"]
 	path = src/waypoint_package
 	url = https://github.com/THI-Drone/waypoint_package.git
+	branch = pre-release
+[submodule "src/mission_file_reader"]
+	path = src/mission_file_reader
+	url = https://github.com/THI-Drone/mission_file_reader.git
+	branch = release
+[submodule "src/fcc_bridge_package"]
+	path = src/fcc_bridge_package
+	url = https://github.com/THI-Drone/fcc_bridge_package.git
+    branch = pre-release
+[submodule "src/mission_software_launch"]
+	path = src/mission_software_launch
+	url = https://github.com/THI-Drone/mission_software_launch.git
+	branch = dev
+[submodule "deployment"]
+	path = deployment
+	url = https://github.com/THI-Drone/deployment.git
 	branch = dev

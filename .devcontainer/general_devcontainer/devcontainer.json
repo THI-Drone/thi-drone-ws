@@ -29,13 +29,8 @@
         }
     },
     "containerEnv": {
-        "DISPLAY": "unix:0",
         "ROS_LOCALHOST_ONLY": "1",
         "ROS_DOMAIN_ID": "42"
     },
-    "runArgs": [
-        "--net=host",
-        "-e", "DISPLAY=${env:DISPLAY}"
-    ],
-    "postCreateCommand": "sudo rosdep fix-permissions && rosdep update && rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/"
+    "postCreateCommand": "sudo rosdep fix-permissions && rosdep update && rosdep install --from-paths /home/ws/src --ignore-src -y"
 }
