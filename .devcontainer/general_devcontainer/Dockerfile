@@ -29,6 +29,11 @@ RUN pip install opencv-python
 # this gets installed by rosdep, anyways so let's put it here
 RUN apt-get install -y python3-opencv
 
+# Qreader dependencies
+RUN pip install torch --no-cache-dir
+RUN pip install qreader
+RUN apt-get install -y libzbar0
+
 # LibGL Dependency
 RUN apt-get install -y libgl1-mesa-glx
 
